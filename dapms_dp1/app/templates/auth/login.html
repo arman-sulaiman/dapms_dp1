@@ -1,0 +1,31 @@
+
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="max-w-md mx-auto bg-white p-6 rounded-xl shadow">
+
+<h2 class="text-xl font-semibold mb-4">Login</h2>
+
+<form method="post" class="space-y-3">
+
+<input name="email" placeholder="Email"
+class="w-full border p-2 rounded">
+
+<input name="password" type="password" placeholder="Password"
+class="w-full border p-2 rounded">
+
+<select name="role" class="w-full border p-2 rounded">
+<option value="admin">Admin</option>
+<option value="teacher">Teacher</option>
+<option value="student">Student</option>
+</select>
+
+<button class="w-full bg-slate-900 text-white p-2 rounded">
+Login
+</button>
+
+</form>
+
+</div>
+
+{% endblock %}
